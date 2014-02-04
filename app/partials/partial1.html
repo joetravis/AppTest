@@ -1,0 +1,9 @@
+<p>This is the partial for view 1.</p>
+<google-map center='map.center' zoom='map.zoom' draggable='true'>
+    <markers models="map.markers" coords="'self'" icon="'icon'" click="'onClicked'"
+             doCluster="map.doClusterRandomMarkers" clusterOptions="map.clusterOptions">
+    </markers>
+</google-map>
+<button ng-click="resetCenter()">Reset Center</button>
+<p>Lat: {{map.center.latitude}}</p>
+<p>Long: {{map.center.longitude}}</p>
